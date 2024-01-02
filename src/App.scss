@@ -1,0 +1,10 @@
+@import "./base/settings";
+@import "./components/target";
+@import "./components/target-info";
+@import "./pages/menu-principal";
+@import "./pages/menu-descripcion";
+@import "./index.scss";
+
+a{
+  text-decoration: none;
+}

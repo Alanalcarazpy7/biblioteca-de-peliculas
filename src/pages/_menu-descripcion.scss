@@ -1,0 +1,11 @@
+.contenedor-descripcion{
+  .contenedor-target{
+    display: flex;
+    justify-content: center;
+  }
+  .titulo-menu{
+    font-size: 35px;
+    text-align: center;
+    color: $main-title;
+  }
+}

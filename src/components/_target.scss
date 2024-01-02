@@ -1,0 +1,23 @@
+.contenedor-tarjetas{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  img{
+    width: 150px;
+    height: 220px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  &:hover{
+    transform: scale(1.2);
+    filter: brightness(0.6);
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

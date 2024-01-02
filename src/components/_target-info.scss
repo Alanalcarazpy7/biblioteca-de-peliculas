@@ -1,0 +1,54 @@
+.contenedor-descripcion-target{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 1rem;
+  img{
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    margin: 0 2rem;
+  }
+  .titulo{
+    color: $main-title;
+    font-size: 35px;
+    margin: 0;
+  }
+  p{
+    font-size: 19px;
+  }
+  .boton-volver{
+    background-color:$main-title ;
+    color: white;
+    overflow: none;
+    font-size: 20px;
+    padding: 0.4rem 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+      transform: scale(1.1);
+      filter: brightness(0.85);
+}
+  }
+
+  @media only screen and (max-width: 870px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .titulo{
+      text-align: center;
+    }
+    .genero{
+    text-align: center;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+
+  }
+}

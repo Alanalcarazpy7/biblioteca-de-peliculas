@@ -1,0 +1,14 @@
+.contenedor-menu{
+  .titulo-menu{
+    font-size: 35px;
+    text-align: center;
+    color: $main-title;
+  }
+  .contenedor-targets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    justify-items: center;
+    margin: 2.5rem;
+  }
+}
+
