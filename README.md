@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Biblioteca de Peliculas
 
 La Biblioteca de Películas es una aplicación web desarrollada con React que te brinda acceso a información detallada sobre las 20 mejores películas según la valoración de TheMovieDb que es una Api para obtener informaciones actualizadas sobre películas populares. Podrás visualizar las portadas, títulos, géneros y descripciones de cada película, así como disfrutar de pequeños tráilers.
