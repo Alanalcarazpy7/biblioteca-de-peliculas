@@ -7,14 +7,24 @@ export default function TargetInfo({data}) {
 
   const [generos, setGeneros] = useState([]);
   const [generoResult, setGenerosResult] = useState(null);
-  
+  const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/genre/movie/list?language=en&api_key=${API_KEY}`)
-  .then(response => response.json())
-  .then(response => setGeneros(response))
-  .catch(err => console.error(err));
-  }, []);
+    const fecthData=async () =>{
+      try{
+        const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?language=en&api_key=${API_KEY}`)
+        const data = await response.json();
+        setGeneros(data)
+        setIsLoading(false);
+      }
+      catch (err){
+        console.error(err);      
+      }
+  }
+  fecthData();
+  console.log("genero",generos)
+  }, [data]);
  
 
   
@@ -26,8 +36,11 @@ export default function TargetInfo({data}) {
   })
 
   useEffect(() => {
-    getGenero();
-  }, [data]);
+    if (!isLoading) {
+      getGenero();
+      console.log(generoResult)
+    }
+  }, [isLoading]);
 
   return (
     <>
