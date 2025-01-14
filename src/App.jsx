@@ -15,13 +15,19 @@ function App() {
   const [id, setId] = useState(0);
 
   return (
-    <Router>
+    <Router basename="/biblioteca-de-peliculas">
       <Routes>
-        <Route path="/" element={<MenuPrincipal datos={datos} setId={setId}/>} />
-        <Route path={"/descripcion/:id"} element={<MenuDescripcion datos={datos} />} />
+        <Route
+          path="/"
+          element={<MenuPrincipal datos={datos} setId={setId} />}
+        />
+        <Route
+          path={"/descripcion/:id"}
+          element={<MenuDescripcion datos={datos} />}
+        />
       </Routes>
     </Router>
-  )
+  );
 }
 
 export default App

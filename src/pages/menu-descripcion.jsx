@@ -74,7 +74,7 @@ export default function MenuDescripcion({datos}) {
   )
 }
 
-MenuDescripcion.propTypes={
-  id:PropTypes.number,
-  datos:PropTypes.object,
-}
+MenuDescripcion.propTypes = {
+  id: PropTypes.number,
+  datos: PropTypes.object,
+};
